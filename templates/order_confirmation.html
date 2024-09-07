@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Confirmation</title>
+    <style>
+        div{
+            height:100%;
+            background-color:#f2f2f2;
+            margin-left:20px;
+            margin-right:20px;
+            border-radius:4px;
+        }
+        div>h1{
+            text-align:center;
+            font-weight:bold;
+        }
+        
+      </style>
+</head>
+<body>
+    <div>
+    <h1>Order Confirmation</h1>
+    <p>Thank you for your order! {{ order.id }} {{ order.total_amount }}</p>
+    </div>
+</body>
+</html>

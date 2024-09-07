@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:8000/admin/auth/user/2/change/ -->
+<html lang="en-us" dir="ltr" data-theme="auto"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>vermarakesh | Change user | Django site admin</title>
+<link rel="stylesheet" href="./vermarakesh _ Change user _ Django site admin_files/base.css">
+
+  <link rel="stylesheet" href="./vermarakesh _ Change user _ Django site admin_files/dark_mode.css">
+  <script src="./vermarakesh _ Change user _ Django site admin_files/theme.js.download" defer=""></script>
+
+
+  <link rel="stylesheet" href="./vermarakesh _ Change user _ Django site admin_files/nav_sidebar.css">
+  <script src="./vermarakesh _ Change user _ Django site admin_files/nav_sidebar.js.download" defer=""></script>
+
+<link rel="stylesheet" href="./vermarakesh _ Change user _ Django site admin_files/forms.css">
+
+
+<script src="./vermarakesh _ Change user _ Django site admin_files/saved_resource"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/jquery.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/calendar.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/jquery.init.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/DateTimeShortcuts.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/core.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/RelatedObjectLookups.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/SelectBox.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/actions.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/SelectFilter2.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/urlify.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/prepopulate.js.download"></script>
+<script src="./vermarakesh _ Change user _ Django site admin_files/xregexp.js.download"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vermarakesh _ Change user _ Django site admin_files/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+<body class=" app-auth model-user change-form" data-admin-utc-offset="0">
+<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#content-start" class="skip-to-content-link">Skip to main content</a>
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    
+      <header id="header">
+        <div id="branding">
+        
+<div id="site-name"><a href="http://127.0.0.1:8000/admin/">Django administration</a></div>
+
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+            
+                
+                    <a href="http://127.0.0.1:8000/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="http://127.0.0.1:8000/admin/password_change/">Change password</a> /
+                
+                <form id="logout-form" method="post" action="http://127.0.0.1:8000/admin/logout/">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="62C6HVSFPO84EGqLJkRJ34stbyl6jvmlnR6B8BZnMyS6sTBXL2h2OxND6ejlSu5r">
+                    <button type="submit" fdprocessedid="24ojts">Log out</button>
+                </form>
+                
+<button class="theme-toggle" fdprocessedid="j2cw">
+  <div class="visually-hidden theme-label-when-auto">Toggle theme (current theme: auto)</div>
+  <div class="visually-hidden theme-label-when-light">Toggle theme (current theme: light)</div>
+  <div class="visually-hidden theme-label-when-dark">Toggle theme (current theme: dark)</div>
+  <svg aria-hidden="true" class="theme-icon-when-auto">
+    <use xlink:href="#icon-auto"></use>
+  </svg>
+  <svg aria-hidden="true" class="theme-icon-when-dark">
+    <use xlink:href="#icon-moon"></use>
+  </svg>
+  <svg aria-hidden="true" class="theme-icon-when-light">
+    <use xlink:href="#icon-sun"></use>
+  </svg>
+</button>
+
+            
+        </div>
+        
+        
+        
+      </header>
+    
+    <!-- END Header -->
+    
+      <nav aria-label="Breadcrumbs">
+        
+<div class="breadcrumbs">
+<a href="http://127.0.0.1:8000/admin/">Home</a>
+› <a href="http://127.0.0.1:8000/admin/auth/">Authentication and Authorization</a>
+› <a href="http://127.0.0.1:8000/admin/auth/user/">Users</a>
+› vermarakesh
+</div>
+
+      </nav>
+    
+    
+
+    <div class="main shifted" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation" fdprocessedid="q7iva"></button>
+<nav class="sticky" id="nav-sidebar" aria-label="Sidebar" aria-expanded="true">
+  <input type="search" id="nav-filter" placeholder="Start typing to filter…" aria-label="Filter navigation items">
+  
+
+
+  
+    <div class="app-auth module current-app">
+      <table>
+        <caption>
+          <a href="http://127.0.0.1:8000/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+          <tbody><tr class="model-group">
+            
+              <th scope="row"><a href="http://127.0.0.1:8000/admin/auth/group/">Groups</a></th>
+            
+
+            
+              <td><a href="http://127.0.0.1:8000/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-user current-model">
+            
+              <th scope="row"><a href="http://127.0.0.1:8000/admin/auth/user/" aria-current="page">Users</a></th>
+            
+
+            
+              <td><a href="http://127.0.0.1:8000/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </tbody></table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <main id="content-start" class="content" tabindex="-1">
+        
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Change user</h1>
+          <h2>vermarakesh</h2>
+          <div id="content-main">
+
+
+  <ul class="object-tools">
+    
+      
+
+<li>
+    
+    <a href="http://127.0.0.1:8000/admin/auth/user/2/history/" class="historylink">History</a>
+</li>
+
+
+
+    
+  </ul>
+
+
+<form method="post" id="user_form" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="62C6HVSFPO84EGqLJkRJ34stbyl6jvmlnR6B8BZnMyS6sTBXL2h2OxND6ejlSu5r">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-username">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_username">Username:</label>
+                                
+                                    <input type="text" name="username" value="vermarakesh" class="vTextField" maxlength="150" autocapitalize="none" autocomplete="username" required="" aria-describedby="id_username_helptext" id="id_username" fdprocessedid="2s4tin">
+                                
+                            
+                        </div>
+                    
+                        <div class="help" id="id_username_helptext">
+                            <div>Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-password">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label>Password:</label>
+                                
+                                    <div disabled="" aria-describedby="id_password_helptext" id="id_password">
+
+<strong>algorithm</strong>: <bdi>pbkdf2_sha256</bdi>
+
+<strong>iterations</strong>: <bdi>720000</bdi>
+
+<strong>salt</strong>: <bdi>9dhVoE****************</bdi>
+
+<strong>hash</strong>: <bdi>3K51xc**************************************</bdi>
+
+</div>
+                                
+                            
+                        </div>
+                    
+                        <div class="help">
+                            <div>Raw passwords are not stored, so there is no way to see this user’s password, but you can change the password using <a href="http://127.0.0.1:8000/admin/auth/user/2/password/">this form</a>.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Personal info</h2>
+    
+    
+        <div class="form-row field-first_name">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_first_name">First name:</label>
+                                
+                                    <input type="text" name="first_name" value="rakesh" class="vTextField" maxlength="150" id="id_first_name" fdprocessedid="zrw9mp">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-last_name">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_last_name">Last name:</label>
+                                
+                                    <input type="text" name="last_name" value="verma" class="vTextField" maxlength="150" id="id_last_name" fdprocessedid="ydjfhe">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-email">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_email">Email address:</label>
+                                
+                                    <input type="email" name="email" value="vermarakesh12@gmail.com" class="vTextField" maxlength="254" id="id_email" fdprocessedid="rh4xui">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Permissions</h2>
+    
+    
+        <div class="form-row field-is_active">
+            
+            
+                <div>
+                    
+                        <div class="flex-container checkbox-row">
+                            
+                                <input type="checkbox" name="is_active" aria-describedby="id_is_active_helptext" id="id_is_active" checked=""><label class="vCheckboxLabel" for="id_is_active">Active</label>
+                            
+                        </div>
+                    
+                        <div class="help" id="id_is_active_helptext">
+                            <div>Designates whether this user should be treated as active. Unselect this instead of deleting accounts.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-is_staff">
+            
+            
+                <div>
+                    
+                        <div class="flex-container checkbox-row">
+                            
+                                <input type="checkbox" name="is_staff" aria-describedby="id_is_staff_helptext" id="id_is_staff" checked=""><label class="vCheckboxLabel" for="id_is_staff">Staff status</label>
+                            
+                        </div>
+                    
+                        <div class="help" id="id_is_staff_helptext">
+                            <div>Designates whether the user can log into this admin site.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-is_superuser">
+            
+            
+                <div>
+                    
+                        <div class="flex-container checkbox-row">
+                            
+                                <input type="checkbox" name="is_superuser" aria-describedby="id_is_superuser_helptext" id="id_is_superuser" checked=""><label class="vCheckboxLabel" for="id_is_superuser">Superuser status</label>
+                            
+                        </div>
+                    
+                        <div class="help" id="id_is_superuser_helptext">
+                            <div>Designates that this user has all permissions without explicitly assigning them.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-groups">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_groups">Groups:</label>
+                                
+                                    <div class="related-widget-wrapper" data-model-ref="group"><div class="selector"><div class="selector-available"><h2>Available groups <span class="help help-tooltip help-icon" title="This is the list of available groups. You may choose some by selecting them in the box below and then clicking the &quot;Choose&quot; arrow between the two boxes."></span></h2><p id="id_groups_filter" class="selector-filter"><label for="id_groups_input"><span class="help-tooltip search-label-icon" title="Type into this box to filter down the list of available groups."></span></label> <input type="text" placeholder="Filter" id="id_groups_input" fdprocessedid="zqy715"></p><select name="groups_old" aria-describedby="id_groups_helptext" id="id_groups_from" multiple="" class="filtered" data-field-name="groups" data-is-stacked="0" fdprocessedid="49o79t"></select><a title="Click to choose all groups at once." href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_groups_add_all_link" class="selector-chooseall">Choose all</a></div><ul class="selector-chooser"><li><a title="Choose" href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_groups_add_link" class="selector-add">Choose</a></li><li><a title="Remove" href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_groups_remove_link" class="selector-remove">Remove</a></li></ul><div id="id_groups_selector_chosen" class="selector-chosen"><h2>Chosen groups <span class="help help-tooltip help-icon" title="This is the list of chosen groups. You may remove some by selecting them in the box below and then clicking the &quot;Remove&quot; arrow between the two boxes."></span></h2><p id="id_groups_filter_selected" class="selector-filter"><label for="id_groups_selected_input"><span class="help-tooltip search-label-icon" title="Type into this box to filter down the list of selected groups."></span></label> <input type="text" placeholder="Filter" id="id_groups_selected_input" fdprocessedid="a621s"></p><select id="id_groups_to" multiple="" size="0" name="groups" class="filtered" fdprocessedid="oixwaf"></select><div class="list-footer-display"><span id="id_groups_list-footer-display-text">0 selected options not visible</span><span class="list-footer-display__clear"> (click to clear)</span></div><a title="Click to remove all chosen groups at once." href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_groups_remove_all_link" class="selector-clearall">Remove all</a></div></div>
+    
+    
+        <a class="related-widget-wrapper-link add-related" id="add_id_groups" data-popup="yes" href="http://127.0.0.1:8000/admin/auth/group/add/?_to_field=id&amp;_popup=1" title="Add another group"><img src="./vermarakesh _ Change user _ Django site admin_files/icon-addlink.svg" alt="" width="20" height="20"></a>
+    
+</div>
+                                
+                            
+                        </div>
+                    
+                        <div class="help" id="id_groups_helptext">
+                            <div>The groups this user belongs to. A user will get all permissions granted to each of their groups. Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-user_permissions">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_user_permissions">User permissions:</label>
+                                
+                                    <div class="related-widget-wrapper" data-model-ref="permission"><div class="selector"><div class="selector-available"><h2>Available user permissions <span class="help help-tooltip help-icon" title="This is the list of available user permissions. You may choose some by selecting them in the box below and then clicking the &quot;Choose&quot; arrow between the two boxes."></span></h2><p id="id_user_permissions_filter" class="selector-filter"><label for="id_user_permissions_input"><span class="help-tooltip search-label-icon" title="Type into this box to filter down the list of available user permissions."></span></label> <input type="text" placeholder="Filter" id="id_user_permissions_input" fdprocessedid="73ufv"></p><select name="user_permissions_old" aria-describedby="id_user_permissions_helptext" id="id_user_permissions_from" multiple="" class="filtered" data-field-name="user permissions" data-is-stacked="0" fdprocessedid="ogns7"><option value="2" title="Administration | log entry | Can change log entry">Administration | log entry | Can change log entry</option><option value="3" title="Administration | log entry | Can delete log entry">Administration | log entry | Can delete log entry</option><option value="4" title="Administration | log entry | Can view log entry">Administration | log entry | Can view log entry</option><option value="9" title="Authentication and Authorization | group | Can add group">Authentication and Authorization | group | Can add group</option><option value="10" title="Authentication and Authorization | group | Can change group">Authentication and Authorization | group | Can change group</option><option value="11" title="Authentication and Authorization | group | Can delete group">Authentication and Authorization | group | Can delete group</option><option value="12" title="Authentication and Authorization | group | Can view group">Authentication and Authorization | group | Can view group</option><option value="5" title="Authentication and Authorization | permission | Can add permission">Authentication and Authorization | permission | Can add permission</option><option value="6" title="Authentication and Authorization | permission | Can change permission">Authentication and Authorization | permission | Can change permission</option><option value="7" title="Authentication and Authorization | permission | Can delete permission">Authentication and Authorization | permission | Can delete permission</option><option value="8" title="Authentication and Authorization | permission | Can view permission">Authentication and Authorization | permission | Can view permission</option><option value="13" title="Authentication and Authorization | user | Can add user">Authentication and Authorization | user | Can add user</option><option value="14" title="Authentication and Authorization | user | Can change user">Authentication and Authorization | user | Can change user</option><option value="15" title="Authentication and Authorization | user | Can delete user">Authentication and Authorization | user | Can delete user</option><option value="16" title="Authentication and Authorization | user | Can view user">Authentication and Authorization | user | Can view user</option><option value="17" title="Content Types | content type | Can add content type">Content Types | content type | Can add content type</option><option value="18" title="Content Types | content type | Can change content type">Content Types | content type | Can change content type</option><option value="19" title="Content Types | content type | Can delete content type">Content Types | content type | Can delete content type</option><option value="20" title="Content Types | content type | Can view content type">Content Types | content type | Can view content type</option><option value="21" title="Sessions | session | Can add session">Sessions | session | Can add session</option><option value="22" title="Sessions | session | Can change session">Sessions | session | Can change session</option><option value="23" title="Sessions | session | Can delete session">Sessions | session | Can delete session</option><option value="24" title="Sessions | session | Can view session">Sessions | session | Can view session</option></select><a title="Click to choose all user permissions at once." href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_user_permissions_add_all_link" class="selector-chooseall active">Choose all</a></div><ul class="selector-chooser"><li><a title="Choose" href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_user_permissions_add_link" class="selector-add">Choose</a></li><li><a title="Remove" href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_user_permissions_remove_link" class="selector-remove">Remove</a></li></ul><div id="id_user_permissions_selector_chosen" class="selector-chosen"><h2>Chosen user permissions <span class="help help-tooltip help-icon" title="This is the list of chosen user permissions. You may remove some by selecting them in the box below and then clicking the &quot;Remove&quot; arrow between the two boxes."></span></h2><p id="id_user_permissions_filter_selected" class="selector-filter"><label for="id_user_permissions_selected_input"><span class="help-tooltip search-label-icon" title="Type into this box to filter down the list of selected user permissions."></span></label> <input type="text" placeholder="Filter" id="id_user_permissions_selected_input" fdprocessedid="g40gof"></p><select id="id_user_permissions_to" multiple="" size="0" name="user_permissions" class="filtered" fdprocessedid="ifufon"><option value="1" title="Administration | log entry | Can add log entry">Administration | log entry | Can add log entry</option></select><div class="list-footer-display"><span id="id_user_permissions_list-footer-display-text">0 selected options not visible</span><span class="list-footer-display__clear"> (click to clear)</span></div><a title="Click to remove all chosen user permissions at once." href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="id_user_permissions_remove_all_link" class="selector-clearall active">Remove all</a></div></div>
+    
+    
+        
+    
+</div>
+                                
+                            
+                        </div>
+                    
+                        <div class="help" id="id_user_permissions_helptext">
+                            <div>Specific permissions for this user. Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Important dates</h2>
+    
+    
+        <div class="form-row field-last_login">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label>Last login:</label>
+                                
+                                    <p class="datetime">
+  Date: <input type="text" name="last_login_0" value="2024-08-01" class="vDateField" size="10" id="id_last_login_0" fdprocessedid="a8frdr"><span class="datetimeshortcuts">&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Today</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="calendarlink0"><span class="date-icon" title="Choose a Date"></span></a></span>
+
+<br>
+  Time: <input type="text" name="last_login_1" value="09:20:48" class="vTimeField" size="8" id="id_last_login_1" fdprocessedid="8wfqjf"><span class="datetimeshortcuts">&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Now</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="clocklink0"><span class="clock-icon" title="Choose a Time"></span></a></span>
+
+
+<div class="help timezonewarning">Note: You are 5.5 hours ahead of server time.</div></p>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-date_joined">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required">Date joined:</label>
+                                
+                                    <p class="datetime">
+  Date: <input type="text" name="date_joined_0" value="2024-08-03" class="vDateField" size="10" required="" id="id_date_joined_0" fdprocessedid="pr62zn"><span class="datetimeshortcuts">&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Today</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="calendarlink1"><span class="date-icon" title="Choose a Date"></span></a></span>
+
+<br>
+  Time: <input type="text" name="date_joined_1" value="17:36:49" class="vTimeField" size="8" required="" id="id_date_joined_1" fdprocessedid="bqc7v"><span class="datetimeshortcuts">&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Now</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" id="clocklink1"><span class="clock-icon" title="Choose a Time"></span></a></span>
+
+
+<div class="help timezonewarning">Note: You are 5.5 hours ahead of server time.</div></p><input type="hidden" name="initial-date_joined_0" value="2024-08-03" id="initial-id_date_joined_0"><input type="hidden" name="initial-date_joined_1" value="17:36:49" id="initial-id_date_joined_1">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save" fdprocessedid="royexd">
+
+<input type="submit" value="Save and add another" name="_addanother" fdprocessedid="n2pf7">
+<input type="submit" value="Save and continue editing" name="_continue" fdprocessedid="t4u8gi">
+
+
+    
+    <a href="http://127.0.0.1:8000/admin/auth/user/2/delete/" class="deletelink">Delete</a>
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants" src="./vermarakesh _ Change user _ Django site admin_files/change_form.js.download" async="">
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants" src="./vermarakesh _ Change user _ Django site admin_files/prepopulate_init.js.download" data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+        <div id="footer"></div>
+      </main>
+    </div>
+</div>
+<!-- END Container -->
+
+<!-- SVGs -->
+<svg xmlns="http://www.w3.org/2000/svg" class="base-svgs">
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-auto"><path d="M0 0h24v24H0z" fill="currentColor"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z"></path></symbol>
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-moon"><path d="M0 0h24v24H0z" fill="currentColor"></path><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"></path></symbol>
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-sun"><path d="M0 0h24v24H0z" fill="currentColor"></path><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></symbol>
+</svg>
+<!-- END SVGs -->
+
+
+<div class="calendarbox module" id="calendarbox0" style="display: none; position: absolute;"><div><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" class="calendarnav-previous">&lt;</a><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" class="calendarnav-next">&gt;</a></div><div id="calendarin0" class="calendar"><table><caption>August 2024</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">1</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">2</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">3</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">4</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">5</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">7</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">8</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">9</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">10</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">11</a></td><td class="today"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">12</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">13</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">14</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">15</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">16</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">17</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">18</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">19</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">20</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">21</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">22</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">23</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">24</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">25</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">26</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">27</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">28</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">29</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">30</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">31</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Yesterday</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Today</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Tomorrow</a></div><p class="calendar-cancel"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Cancel</a></p></div><div class="clockbox module" id="clockbox0" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Now</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Midnight</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6 a.m.</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Noon</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Cancel</a></p></div><div class="calendarbox module" id="calendarbox1" style="display: none; position: absolute;"><div><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" class="calendarnav-previous">&lt;</a><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#" class="calendarnav-next">&gt;</a></div><div id="calendarin1" class="calendar"><table><caption>August 2024</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">1</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">2</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">3</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">4</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">5</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">7</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">8</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">9</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">10</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">11</a></td><td class="today"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">12</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">13</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">14</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">15</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">16</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">17</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">18</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">19</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">20</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">21</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">22</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">23</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">24</a></td></tr><tr><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">25</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">26</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">27</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">28</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">29</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">30</a></td><td class=""><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">31</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Yesterday</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Today</a>&nbsp;|&nbsp;<a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Tomorrow</a></div><p class="calendar-cancel"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Cancel</a></p></div><div class="clockbox module" id="clockbox1" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Now</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Midnight</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6 a.m.</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Noon</a></li><li><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="http://127.0.0.1:8000/admin/auth/user/2/change/#">Cancel</a></p></div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>

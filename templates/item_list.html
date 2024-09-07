@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+
+<link rel="shortcut icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="/static/css/style.css">
+
+<!-- 
+  - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+  rel="stylesheet">
+
+<!-- 
+  - preload images
+-->
+<link rel="preload" as="image" href="./static/images/hero-banner.png" media="min-width(768px)">
+<link rel="preload" as="image" href="./static/images/hero-banner-bg.png" media="min-width(768px)">
+<link rel="preload" as="image" href="./static/images/hero-bg.jpg">
+
+</head>
+<body>
+    <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Dishes</p>
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+
+          <ul class="fiter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Pizza</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Burger </button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Drinks</button>
+            </li>
+
+            <li>
+              <a><button class="filter-btn">Sandwich</button>
+            </li>
+
+          </ul>
+          {% for i in item %}
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="{{i.img.url}}" width="300" height="300" loading="lazy"
+                    alt="Fried Chicken Unlimited" class="w-100">
+
+                  <div class="badge">-15%</div>
+
+                 <a href="/Your-Cart"> <button class="btn food-menu-btn">Add to cart</button></a>
+                </div>
+
+               
+                <h3 class="h3 card-title">{{i.name}}</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price">Rs:{{i.price}}</data>
+
+                  <del class="del" value="269.00">Rs.269</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              {% endfor %}
+        </div>
+      </section>
+
+    <h1>Item List</h1>
+    <ul>
+        {% for item in items %}
+            
+                <h2>{{ item.name }} Rs.{{ item.price }}</h2>
+                <a href="{% url 'add_to_cart' item.id %}">Add to Cart</a>
+            
+        {% endfor %}
+    </ul>
+    <br>
+    
+    <a href="{% url 'view_cart' %}">View Cart</a>
+</body>
+</html>

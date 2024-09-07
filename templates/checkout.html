@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <ul>
+        {% for item in cart.cart_items.all %}
+            <li>{{ item.menu_item.name }} - {{ item.quantity }} - ${{ item.total_price }}</li>
+        {% endfor %}
+    </ul>
+    <p>Total: rs.{{ cart.total_amount }}</p>
+    <form method="post" action="{% url 'checkout' %}">
+        {% csrf_token %}
+        <label for="restaurant_id">Select Restaurant:</label>
+        <select id="restaurant_id" name="restaurant_id">
+            {% for restaurant in restaurants %}
+                <option value="{{ restaurant.id }}">{{ restaurant.name }}</option>
+            {% endfor %}
+        </select>
+       
+    </form>
+    <a href="/checkout_form" ><button type="submit">Place Order</button></a>
+</body>
+</html>

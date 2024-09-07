@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ restaurant.name }} Menu</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Food</title>
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="/static/css/style.css">
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./static/images/hero-banner.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./static/images/hero-banner-bg.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./static/images/hero-bg.jpg">
+    <style>
+      button{
+        width:97%;
+        background-color:orange;
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:10px;
+        border-radius:4px;
+        padding: 10px 20px;
+        border:none;
+       }
+    </style>
+  
+</head>
+<body>
+        <section class="section food-menu" id="food-menu">
+            <div class="container">
+    
+              <p class="h2 section-title">Popular Dishes of {{ restaurant.name }}</p>
+    
+              <h2 class="section-subtitle">
+                Our Delicious <span class="span">Foods</span>
+              </h2>
+    
+              <p class="section-text">
+                Food is any substance consumed to provide nutritional support for an organism.
+              </p>
+    
+              <ul class="fiter-list">
+    
+                <li>
+                  <button class="filter-btn  active">All</button>
+                </li>
+    
+                <li>
+                  <button class="filter-btn">Pizza</button>
+                </li>
+    
+                <li>
+                  <button class="filter-btn">Burger </button>
+                </li>
+    
+                <li>
+                  <button class="filter-btn">Drinks</button>
+                </li>
+    
+                <li>
+                  <a><button class="filter-btn">Sandwich</button>
+                </li>
+    
+              </ul>
+             <ul class="promo-list has-scrollbar">
+              {% for item in menu_items %}
+              <ul class="food-menu-list">
+    
+                <li>
+                  <div class="food-menu-card">
+    
+                    <div class="card-banner">
+                      {% comment %} <img src="{{ item.img }}" width="300" height="300" loading="lazy"
+                        alt="Fried Chicken Unlimited" class="w-100">
+                       {% endcomment %}
+                      <div class="badge">-15%</div>
+    
+                     <a href="{% url 'add_to_cart' item.id %}"> <button class="btn food-menu-btn">Add to cart</button></a>
+                    </div>
+    
+                   
+                    <h3 class="h3 card-title">{{item.name}}</h3>
+    
+                    <div class="price-wrapper">
+    
+                      <p class="price-text">Price:</p>
+    
+                      <data class="price">Rs:{{item.price}}</data>
+    
+                      <del class="del" value="269.00">Rs.269</del>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    <ul>
+                
+                 
+      {% endfor %} 
+         
+         
+    
+  </div>
+</section>
+
+<a href="{% url 'cart_view' %}"><button style="background-color:orange;">Go to Cart</button></a>
+</body>
+</html>
